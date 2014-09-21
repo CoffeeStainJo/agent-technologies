@@ -120,8 +120,9 @@ public class BookSellerAgent extends Agent {
 				 * performative of not-understood is sendt 
 				 * back to the bookBuyerAgent
 				 * */
+				Integer price = null;
 				try{				
-				    Integer price = (Integer) catalogue.get(title);
+				    price = (Integer) catalogue.get(title);
 				    
 				} catch(Exception e) {
 					

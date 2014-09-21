@@ -209,7 +209,7 @@ public class BookBuyerAgent extends Agent {
 				myAgent.send(reject);
 				// Prepare the template to get the purchase order reply
 				mt = MessageTemplate.and(MessageTemplate.MatchConversationId("book-trade"),
-						MessageTemplate.MatchInReplyTo(order.getReplyWith()));
+						MessageTemplate.MatchInReplyTo(reject.getReplyWith()));
 				step = 5;
 				break;
 			}        
